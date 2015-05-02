@@ -3,8 +3,6 @@
         "SiteTitle": "aspvnextwebpack"
     },
     "Data": {
-        "DefaultConnection": {
-            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-aspvnextwebpack-57a34b34-1723-4d23-aed4-15bffc21ed00;Trusted_Connection=True;MultipleActiveResultSets=true"
-        }
+        
     }
 }
