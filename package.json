@@ -1,8 +1,13 @@
 {
   "name": "aspvnextwebpack",
   "version": "0.0.0",
+  "description": "Example application for using webpack with asp.net vnext",
   "devDependencies": {
+    "babel-core": "^5.2.6",
+    "babel-loader": "^5.0.0",
     "gulp": "3.8.11",
-    "rimraf": "2.2.8"
+    "gulp-webpack-build": "^0.7.2",
+    "rimraf": "2.2.8",
+    "webpack": "1.8.11"
   }
 }
