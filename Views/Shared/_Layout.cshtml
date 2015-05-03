@@ -7,18 +7,14 @@
         <title>@ViewBag.Title - @AppSettings.Options.SiteTitle</title>
 
         <environment names="Development">
-            <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
-            <link rel="stylesheet" href="~/lib/bootstrap-touch-carousel/css/bootstrap-touch-carousel.css" />
-            <link rel="stylesheet" href="~/css/site.css" />
+            <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />            
+            <link rel="stylesheet" href="~/css/app.css" />
         </environment>
         <environment names="Staging,Production">
             <link rel="stylesheet" href="//ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/css/bootstrap.min.css"
                   asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
-                  asp-fallback-test-class="hidden" asp-fallback-test-property="visibility" asp-fallback-test-value="hidden" />
-            <link rel="stylesheet" href="//ajax.aspnetcdn.com/ajax/bootstrap-touch-carousel/0.8.0/css/bootstrap-touch-carousel.css"
-                  asp-fallback-href="~/lib/bootstrap-touch-carousel/css/bootstrap-touch-carousel.css"
-                  asp-fallback-test-class="carousel-caption" asp-fallback-test-property="display" asp-fallback-test-value="none" />
-            <link rel="stylesheet" href="~/css/site.css" />
+                  asp-fallback-test-class="hidden" asp-fallback-test-property="visibility" asp-fallback-test-value="hidden" />            
+            <link rel="stylesheet" href="~/css/app.css" />
         </environment>
     </head>
     <body>
@@ -52,8 +48,7 @@
         <environment names="Development">
             <script src="~/lib/jquery/jquery.js"></script>
             <script src="~/lib/bootstrap/js/bootstrap.js"></script>
-            <script src="~/lib/hammer.js/hammer.js"></script>
-            <script src="~/lib/bootstrap-touch-carousel/js/bootstrap-touch-carousel.js"></script>
+            <script src="~/lib/hammer.js/hammer.js"></script>            
             <script src="~/js/app.bundle.js"></script>
         </environment>
         <environment names="Staging,Production">
@@ -68,11 +63,7 @@
             <script src="//ajax.aspnetcdn.com/ajax/hammer.js/2.0.4/hammer.min.js"
                     asp-fallback-src="~/lib/hammer.js/hammer.js"
                     asp-fallback-test="window.Hammer">
-            </script>
-            <script src="//ajax.aspnetcdn.com/ajax/bootstrap-touch-carousel/0.8.0/js/bootstrap-touch-carousel.js"
-                    asp-fallback-src="~/lib/bootstrap-touch-carousel/js/bootstrap-touch-carousel.js"
-                    asp-fallback-test="window.Zepto">
-            </script>
+            </script>            
             <script src="~/js/app.bundle.min.js">
             </script>
         </environment>
