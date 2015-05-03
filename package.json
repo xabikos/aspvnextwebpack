@@ -7,6 +7,7 @@
     "babel-loader": "^5.0.0",
     "gulp": "3.8.11",
     "gulp-webpack-build": "^0.7.2",
+    "lorem-hipsum": "^0.1.7",
     "rimraf": "2.2.8",
     "webpack": "1.8.11"
   }
