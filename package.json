@@ -7,6 +7,8 @@
     "babel-loader": "^5.0.0",
     "expose-loader": "^0.6.0",
     "gulp": "3.8.11",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
     "gulp-webpack-build": "^0.7.2",
     "lorem-hipsum": "^0.1.7",
     "rimraf": "2.2.8",

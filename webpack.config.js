@@ -11,7 +11,7 @@ module.exports = {
         app: './app'
     },
     output: {
-        path: paths.js,
+        path: path.resolve(paths.js),
         filename: '[name].bundle.js'
     },
     module: {
