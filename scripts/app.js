@@ -1,0 +1,1 @@
+var Lorem = require('expose?Lorem!./lorem')

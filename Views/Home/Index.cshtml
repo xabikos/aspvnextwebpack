@@ -14,3 +14,12 @@
  <hr />
   
  <p id="loremText"></p>
+   
+ <script>
+  function generateLoremText(){
+    var count = $('#countInput').val();
+    var loremText = $('#loremText');
+    var validationText = $('validationText');
+    Lorem.addText(count, loremText, validationText);
+  }     
+ </script>

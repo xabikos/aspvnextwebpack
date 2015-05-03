@@ -8,7 +8,7 @@ var paths = {
 module.exports = {
     context: path.join(__dirname, 'scripts'),
     entry: {
-        app: './loremCreator'
+        app: './app'
     },
     output: {
         path: paths.js,
@@ -19,14 +19,6 @@ module.exports = {
           // Transform ES6 code to ES5 using Babel
           { test: /\.js$/, loader: 'babel-loader' }
         ],
-    },
-    resolve: {
-        // Declares the root folder used for aliases
-        root: path.resolve(__dirname, './scripts'),
-        alias: {
-            'loremCreator' : 'loremCreator'  
-        },        
-        extensions: ['.js']
     },
     externals: {        
         jquery: 'jQuery'
