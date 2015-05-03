@@ -2,7 +2,9 @@
 
 var path = require('path'),
     gulp = require('gulp'),
+    filter = require('gulp-filter'),
     uglify = require('gulp-uglify'),
+    minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     rimraf = require('rimraf'),
     fs = require('fs'),
@@ -68,6 +70,9 @@ gulp.task('watch', ['development'], function () {
 
 gulp.task('production', function () {
     
+    var jsFilter = filter('**/*.js');
+    var cssFilter = filter('**/*.css');
+    
     return gulp.src(path.join(CONFIG_FILENAME))
         .pipe(webpack.configure(webpackConfig))
         .pipe(webpack.overrides({
@@ -82,7 +87,12 @@ gulp.task('production', function () {
             errors: true,
             warnings: true
         }))
+        .pipe(jsFilter)
         .pipe(uglify())
+        .pipe(jsFilter.restore())
+        .pipe(cssFilter)
+        .pipe(minifycss())
+        .pipe(cssFilter.restore())
         .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest('.'));
 });
