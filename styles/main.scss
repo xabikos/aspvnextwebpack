@@ -1,3 +1,6 @@
+@import "../bower_components/animated.sass/_animated.scss";
+@include animation(fade-in-down);
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -17,6 +20,10 @@ textarea {
     max-width: 280px;
 }
 
-#loremText{
-    background-color: cyan
+.app-title{
+    @include animate(fade-in-down, 2s);
+}
+
+#loremText {    
+    background-color: cyan,    
 }
