@@ -1,25 +1,11 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Authentication.Facebook;
-using Microsoft.AspNet.Authentication.Google;
-using Microsoft.AspNet.Authentication.MicrosoftAccount;
-using Microsoft.AspNet.Authentication.Twitter;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Diagnostics;
 using Microsoft.AspNet.Diagnostics.Entity;
 using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Http;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Routing;
-using Microsoft.Data.Entity;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
-using Microsoft.Framework.Logging.Console;
-using Microsoft.Framework.Runtime;
 
 namespace aspvnextwebpack
 {
