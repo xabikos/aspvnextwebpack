@@ -1,4 +1,4 @@
-let loremHipsum = require('lorem-hipsum');
+import loremHipsum from 'lorem-hipsum';
 
 let Lorem = {
 	addText(count, loremTextElement, loremValidationElement) {
@@ -13,4 +13,4 @@ let Lorem = {
 	}
 };
 
-module.exports = Lorem;
+export default Lorem;
